@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>L</title>
+</head>
+<script language="JavaScript">document.oncontextmenu=new Function("event.returnValue=false;"); document.onselectstart=new Function("event.returnValue=false;");function killErrors() {return true;}window.onerror = killErrors;</script><script>function onKeyDown(){ if ((event.keyCode==116)||(window.event.ctrlKey)||(window.event.shiftKey)||(event.keyCode==122)||(event.keyCode==123)) { event.keyCode=0; event.returnValue=false; }}</script><script>function yxl() { if(window.event.altKey) {window.event.returnValue=false;}}document.onkeydown=yxl</script>
+<body bgcolor="#000000" leftmargin="0" topmargin="0"scroll="no">
+<div id="myElement"></div>
+<script type="text/javascript" src="http://play.xiaodaokou.com/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+var u = "http://aldirect.hls.huya.com/huyalive/94525224-2472147404-10617792251071299584-2777026638-10057-A-0-1_1200.m3u8",
+	isMobile = /android|phone|mobi|ipad|ipod|blackberry|symbian|midp|ios/i.test(navigator.userAgent.toLowerCase()),
+	z = 0;
+if (isMobile) {
+	document.getElementById('myElement').innerHTML = '<' + 'video autoplay="autoplay" src="' + u + '" controls="controls" width="100%" height="100%" preload="auto"' + '></' + 'video>'
+} else {
+    var flashvars = {
+	f: 'http://play.xiaodaokou.com/ckplayer/m3u8.swf',
+	a: encodeURIComponent(u),
+	lv: 1,
+	c: 0,
+	s: 4,
+	v:100,
+	p: 1
+};
+	var params = {
+		bgcolor: '#FFF',
+		allowFullScreen: true,
+		allowScriptAccess: 'always',
+		wmode: 'transparent'
+	};
+	CKobject.embedSWF('http://play.xiaodaokou.com/ckplayer/ckplayer.swf', 'myElement', 'ckplayer_a1', '100%', '100%', flashvars, params)
+}
+</script>
+</body>
+</html>
